@@ -1,5 +1,42 @@
 .body{
     text-align: left;
     font-family:'Segoe UI',Tahoma, Geneva, Verdana,sans serif;
-background color
+    color:#1a3e2e
+}
+.button{
+    background-color: (#059669);
+    color: white;
+    margin: auto;
+    padding-bottom: 2rem;
+    padding-inline: 1rem;
+
+   
+}
+.menu{
+    background-color: rgb(73, 225, 169);
+    margin: auto;
+    padding-top:  0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 1.5em; 
+    padding-right: 1.5em;
+    text-decoration: none;
+}
+.fejlec{
+    background-color: rgb(66, 181, 66);
+    color: white;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+}
+.szoveg{
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 10px 10px;
+    background-color: lightgreen;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
 }
