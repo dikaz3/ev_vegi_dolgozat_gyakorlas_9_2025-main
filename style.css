@@ -1,32 +1,42 @@
-.body{
+.body{width: 100%;
     text-align: left;
     font-family:'Segoe UI',Tahoma, Geneva, Verdana,sans serif;
     color:#1a3e2e
+    
 }
 .button{
     background-color: (#059669);
     color: white;
-    margin: auto;
-    padding-bottom: 2rem;
-    padding-inline: 1rem;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+    border-radius: 5px;
+text-decoration: none;
+
 
    
 }
+a:hover {
+  background-color: #047857;
+}
+
 .menu{
     background-color: rgb(73, 225, 169);
-    margin: auto;
+    margin: 1rem;
     padding-top:  0.75em;
     padding-bottom: 0.75em;
     padding-left: 1.5em; 
     padding-right: 1.5em;
-    text-decoration: none;
+     font-weight: bold;
 }
 .fejlec{
-    background-color: rgb(66, 181, 66);
-    color: white;
-    margin: auto;
-    padding: 1em;
-    text-align: center;
+  text-align: center;
+  background-color: lightgreen;
+  color: white;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  font-size: 3em;
 }
 .szoveg{
     margin: auto;
@@ -34,9 +44,58 @@
     box-sizing: border-box;
     padding: 10px 10px 10px;
     background-color: lightgreen;
+     background-color: #e6fef1;
+  border-left: 6px solid #10b981;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.szoveg p {
+  margin-bottom: 1em;
+  text-align: justify;
+}
+.szoveg img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+ h2 {
+  color: #065f46;
+  margin-top: 0;
+  font-size: 1.8rem;
 }
 .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1em;
+     
     
+}
+@media (max-width: 600px) {
+
+  body {
+    font-size: 20px;
+  }
+
+  .nav {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .image {
+    order: 2;
+  }
+
+  .text {
+    order: 1;
+  }
 }
